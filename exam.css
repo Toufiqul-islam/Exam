@@ -1,221 +1,131 @@
-.border{
-    background-color: black;
-    margin-bottom: 1000px;
-}
-.name{
-    color:azure;
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    font-size: 60px;
-    color:red;
-    text-shadow: 5px 5px 5px orange;
-}
-.top{
-    width: 0px;
-    height: 3px;
-    position:absolute;
-    top:0px;
-    left: 0px;
-    animation-name: top;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    background-image: linear-gradient(to right, tomato, orange, dodgerblue, mediumseagreen);
-}
-.right{
-    width: 3px;
-    height: 0px;
-    position:absolute;
-    top:0px;
-    left: 720px;
-    animation-name: right;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    background-image: linear-gradient(to top, tomato, orange, dodgerblue, mediumseagreen);
-}
-.bottom{
-    width: 0px;
-    height: 3px;
-    position:absolute;
-    top:720px;
-    left: 750px;
-    animation-name: bottom;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    background-image: linear-gradient(to right, tomato, orange, dodgerblue, mediumseagreen);
-}
-.left{
-    width: 3px;
-    height: 0px;
-    position:absolute;
-    top:750px;
-    left: 0px;
-    animation-name: left;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    background-image: linear-gradient(to top,mediumseagreen, dodgerblue,orange, tomato);
-}
-@keyframes top{
-    25%{
-        width:250px;
-        top: 0px;
-        left: 30px;
-        transition:1s;
-    }
-    50%{
-        width:250px;
-        top:0px;
-        left:250px;
-        transition:1s;
-    }
-    75%{
-        width:250px;
-        top:0px;
-        left:500px;
-        transition:1s;
-    }
-    100%{
-        width:0px;
-        top:0px;
-        left:750px;
-        transition:1s;
-    }
-}
-@keyframes right{
-    25%{
-        height: 250px;
-        top: 0px;
-        left: 720px;
-        transition:1s;
-    }
-    50%{
-        height:250px;
-        top:250px;
-        left:720px;
-        transition:1s;
-    }
-    75%{
-        height:250px;
-        top:500px;
-        left:720px;
-        transition:1s;
-    }
-    100%{
-        height:0px;
-        top:750px;
-        left:720px;
-        transition:1s;
-    }
-}
-@keyframes bottom{
-    25%{
-        width:250px;
-        top: 720px;
-        left: 500px;
-        transition:1s;
-    }
-    50%{
-        width:250px;
-        top:720px;
-        left:250px;
-        transition:1s;
-    }
-    75%{
-        width:250px;
-        top:720px;
-        left:0px;
-        transition:1s;
-    }
-    100%{
-        width:0px;
-        top:720px;
-        left:0px;
-        transition:1s;
-    }
-}
-@keyframes left{
-    25%{
-        height: 250px;
-        top: 500px;
-        left: 0px;
-        transition:1s;
-    }
-    50%{
-        height:250px;
-        top:250px;
-        left:0px;
-        transition:1s;
-    }
-    75%{
-        height:250px;
-        top:0px;
-        left:0px;
-        transition:1s;
-    }
-    100%{
-        height:0px;
-        top:0px;
-        left:0px;
-        transition:1s;
-    }
-}
 .flax{
-    margin-top: 600px;
     display: flex;
-    width: 100%;
-    margin-bottom: 500px;
-    
+    width: 90%;
+    margin: 5%;
 }
-
 .image1{
-    
-    background-image: url(./24701-nature-natural-beauty.jpg);
-    width:18%;
-    padding: 2%;
+    position: relative;
+    padding: 10px;
+}
+.p1>p{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 900;
+    color: chocolate;
+    opacity: 0;
+}
+.image1>img{
+    width: 100%;
+    height: 250px;
+}
+.image1:hover{
+    .p1>p{
+        opacity: 1;
+    }
 }
 .image2{
-    background-image: url(./businessfornature-banner.png);
-    width:18%;
-    padding: 2%;
-    
+    position: relative;
+    padding: 10px;
 }
-.image3{
-    background-image: url(./ct-sep09-19-pg6-1-1568025845795.jpg);
-    width:18%;
-    padding: 2%;
-    
+.p2>p{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 900;
+    color: chocolate;
 }
-.image4{
-    background-image: url(./free-nature-images.jpg);
-    width:18%;
-    padding: 2%;
-    
+.image2>img{
+    width: 100%;
+    height: 250px;
 }
-.image5{
-    background-image: url(./nature-1686808887.jpg);
-    width:18%;
-    padding: 2%;
-}
-.div1>p{
-    text-align: center;
-}
-@media screen and (min-width: 600px){
-    .flax{
-        display:grid;
-        grid-template-columns: auto;
+.image2:hover{
+    .p2>p{
+        opacity: 1;
     }
 }
-
+.image3{
+    position: relative;
+    padding: 10px;
+}
+.p3>p{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 900;
+    color: chocolate;
+}
+.image3>img{
+    width: 100%;
+    height: 250px;
+}
+.image3:hover{
+    .p3>p{
+        opacity: 1;
+    }
+}
+.image4{
+    position: relative;
+    padding: 10px;
+}
+.p4>p{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 900;
+    color: chocolate;
+}
+.image4>img{
+    width: 100%;
+    height: 250px;
+}
+.image4:hover{
+    .p4>p{
+        opacity: 1;
+    }
+}
+.image5{
+    position: relative;
+    padding: 10px;
+}
+.p5>p{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 900;
+    color: chocolate;
+}
+.image5>img{
+    width: 100%;
+    height: 250px;
+}
+.image5:hover{
+    .p5>p{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .flax{
+        display:inline;
+    }
+}
 .parallax {
-    /* The image used */
-    background-image: url("./nature-1686808887.jpg");
-  
-    /* Set a specific height */
+    background-image: url("./pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg");
     min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: auto;
+    border: 3px solid red;
+    animation: mymove 5s infinite;
+  }
+  @keyframes mymove {
+    50% {border: 15px solid lightblue;}
   }
