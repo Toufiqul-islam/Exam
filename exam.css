@@ -1,7 +1,10 @@
 .flax{
     display: flex;
-    width: 90%;
-    margin: 5%;
+    padding: 1.5%;
+    width: 95%;
+    height: auto;
+    border: 3px solid red;
+    animation: mymove 5s infinite;
 }
 .image1{
     position: relative;
@@ -35,6 +38,7 @@
     left: 40%;
     font-size: 30px;
     font-weight: 900;
+    opacity: 0;
     color: chocolate;
 }
 .image2>img{
@@ -56,6 +60,7 @@
     left: 40%;
     font-size: 30px;
     font-weight: 900;
+    opacity: 0;
     color: chocolate;
 }
 .image3>img{
@@ -77,6 +82,7 @@
     left: 40%;
     font-size: 30px;
     font-weight: 900;
+    opacity: 0;
     color: chocolate;
 }
 .image4>img{
@@ -98,6 +104,7 @@
     left: 40%;
     font-size: 30px;
     font-weight: 900;
+    opacity: 0;
     color: chocolate;
 }
 .image5>img{
@@ -121,10 +128,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: auto;
-    border: 3px solid red;
-    animation: mymove 5s infinite;
   }
   @keyframes mymove {
     50% {border: 15px solid lightblue;}
